@@ -448,6 +448,37 @@
         color: #fff;
         text-decoration: none;
     }
+    
+    .joinus {
+        padding: 7px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0);
+        transition: all 0.2s;
+        width: 100%;
+    }
+    
+    .joinus:focus {
+        outline: none;
+        border: 2px solid rgb(0, 100, 0);
+    }
+    
+    .joinusB {
+        color: white;
+        font-weight: bold;
+        background-color: rgb(0, 100, 0);
+        width: 80%;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0);
+        padding: 10px;
+        transition: all 0.2s;
+    }
+    
+    .joinusB:hover {
+        color: rgb(0, 100, 0);
+        border: 2px solid rgb(0, 100, 0);
+        background-color: white;
+    }
 </style>
 
 <body>
@@ -695,10 +726,17 @@
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Join Our Team</h4>
-                        <p>Pinky promise! We will never spam you.</p>
-                        <form action="" method="post">
-                            <input type="email" name="email" /><input type="submit" value="Subscribe" />
-                        </form>
+                        <div class="row">
+                            <div class="col"><input class="joinus" type="text" placeholder="Name"></div>
+                            <div class="col"><input class="joinus" type="text" placeholder="Email"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><input class="joinus" type="text" placeholder="Phone"></div>
+                            <div class="col"><input class="joinus" type="text" placeholder="Role"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button class="joinusB" type="submit">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
